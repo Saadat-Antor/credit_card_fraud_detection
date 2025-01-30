@@ -18,6 +18,7 @@ In contrast, normal transactions have a lower average time gap of 0.61 seconds, 
 5. To conduct a time of day analysis another feature ```Hour``` was created and the ```Time_Diff``` was plotted against it.
 ![image](https://github.com/user-attachments/assets/7c84c5d0-ef4c-4b58-a811-f2af43851521)
 Fraudulent transactions display a clear tendency to occur in bursts or clusters, as shown by significant spikes in average time differences during certain hours (e.g., around hours 5 and 28). These bursts suggest that fraudulent transactions are often concentrated within short intervals, possibly indicative of coordinated attacks or automated processes.
-6.
+6. More features are created to imporve model performance. They are ```Is_Fraud_Consecutive```, ```is_burst_period```, ```is_peak_hour```, ```mean_time_diff_by_hour```, ```std_time_diff_by_hour```, ```distance_to_peak```, ```time_cluster```, ```fraud_count_last_10```, ```time_diff_normalized```. They serve different purposes for our analysis and provide weight to more accurate results.
+7.  
 
 
