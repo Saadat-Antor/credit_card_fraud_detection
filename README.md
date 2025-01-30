@@ -10,7 +10,7 @@ To accomplish our goal we have taken a dataset from Kaggle. This dataset present
 
 ## 2. EDA & Feature Engineering:
 1. Have used describe() and info() funcions of pandas to understand the dataset. Have found out that there was no missing values and all the data types were accurate and made sense.
-2. There were 1825 rows that are zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unsusual in credit card transactions.
+2. There were 1825 rows that are zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unusual in credit card transactions.
 3. The ```Time``` feature is quite important and its' distribution among two classes i.e. Class=0(normal) and Class=1(Fraud) shows that fraudulent transactions are more evenly distributed than the normal ones. The normal ones actually shows a cyclic distribution which indicates both 'peak' and 'off-peak' times.
 ![image](https://github.com/user-attachments/assets/fcf01da7-ca74-48fd-98c1-77aca37d156f)
 4. An important feature was made called ```Time_Diff``` which represents the time gap (in seconds) between consecutive transactions. For fraudulent transactions, the average time gap is approximately 1.07 seconds, with a maximum gap of 16 seconds. Most fraudulent transactions (75%) occur with a time gap of 1 second or less, and half of them have no gap at all.
@@ -19,6 +19,9 @@ In contrast, normal transactions have a lower average time gap of 0.61 seconds, 
 ![image](https://github.com/user-attachments/assets/7c84c5d0-ef4c-4b58-a811-f2af43851521)
 Fraudulent transactions display a clear tendency to occur in bursts or clusters, as shown by significant spikes in average time differences during certain hours (e.g., around hours 5 and 28). These bursts suggest that fraudulent transactions are often concentrated within short intervals, possibly indicative of coordinated attacks or automated processes.
 6. More features are created to imporve model performance. They are ```Is_Fraud_Consecutive```, ```is_burst_period```, ```is_peak_hour```, ```mean_time_diff_by_hour```, ```std_time_diff_by_hour```, ```distance_to_peak```, ```time_cluster```, ```fraud_count_last_10```, ```time_diff_normalized```. They serve different purposes for our analysis and provide weight to more accurate results.
-7.  
+7. The ```Amount``` feature showed a right-skewed distribution for the fraudulent class i.e. Class = 1.
+![image](https://github.com/user-attachments/assets/182f5ced-e1cd-4947-b1de-ba45d5b010b1)
+
+
 
 
