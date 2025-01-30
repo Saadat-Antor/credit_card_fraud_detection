@@ -13,5 +13,10 @@ To accomplish our goal we have taken a dataset from Kaggle. This dataset present
 2. There were 1825 rows that are zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unsusual in credit card transactions.
 3. The ```Time``` feature is quite important and its' distribution among two classes i.e. Class=0(normal) and Class=1(Fraud) shows that fraudulent transactions are more evenly distributed than the normal ones. The normal ones actually shows a cyclic distribution which indicates both 'peak' and 'off-peak' times.
 ![image](https://github.com/user-attachments/assets/fcf01da7-ca74-48fd-98c1-77aca37d156f)
-4. 
+4. An important feature was made called ```Time_Diff``` which represents the time gap (in seconds) between consecutive transactions. For fraudulent transactions, the average time gap is approximately 1.07 seconds, with a maximum gap of 16 seconds. Most fraudulent transactions (75%) occur with a time gap of 1 second or less, and half of them have no gap at all.
+In contrast, normal transactions have a lower average time gap of 0.61 seconds, but the maximum gap extends to 32 seconds. Similarly, 75% of normal transactions also occur within a gap of 1 second or less, and 50% have no time gap.
+5. To conduct a time of day analysis another feature ```Hour``` was created and the ```Time_Diff``` was plotted against it.
+![image](https://github.com/user-attachments/assets/7c84c5d0-ef4c-4b58-a811-f2af43851521)
+6.
+
 
