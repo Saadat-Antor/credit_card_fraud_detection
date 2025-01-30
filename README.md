@@ -17,6 +17,7 @@ To accomplish our goal we have taken a dataset from Kaggle. This dataset present
 In contrast, normal transactions have a lower average time gap of 0.61 seconds, but the maximum gap extends to 32 seconds. Similarly, 75% of normal transactions also occur within a gap of 1 second or less, and 50% have no time gap.
 5. To conduct a time of day analysis another feature ```Hour``` was created and the ```Time_Diff``` was plotted against it.
 ![image](https://github.com/user-attachments/assets/7c84c5d0-ef4c-4b58-a811-f2af43851521)
+Fraudulent transactions display a clear tendency to occur in bursts or clusters, as shown by significant spikes in average time differences during certain hours (e.g., around hours 5 and 28). These bursts suggest that fraudulent transactions are often concentrated within short intervals, possibly indicative of coordinated attacks or automated processes.
 6.
 
 
