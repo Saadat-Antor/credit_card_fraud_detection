@@ -61,4 +61,6 @@ After determining the best model, the AUC-ROC score was determined, 0.9731.
 
 ![image](https://github.com/user-attachments/assets/25f09f04-2ca9-49f0-a37b-7750b0658568)
 
+It is crucial to note that before introducing the engineered features the best model determined was RandomForrest but after introducing the features the best mode determined was GradientBoost. Also, the AUC-ROC score was also improved.
+
 
