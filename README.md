@@ -46,6 +46,9 @@ This heatmap suggested that there were some PCA features that are positively and
 
 The distributions showed that almost all the features are distributed around 0. But some of them went away from zero, especially the distribution of the Class 1(Fraud) such as V1, V3, V4, V7, V9, V10, V11, V14 and so on. There were also features that have almost similar distribution for both the classes, V13, V15, V22, V25, and V26.
 
-11. 
+## 3. Model Selection
+11. As mentioned before the dataset was highly imbalanced, so an oversampling technique called SMOTE was used to balance the dataset. It was done after the split of the main dataset into train, test, and evaluation sets.
+
+12. To select the best mode from the three models i.e. Logistic Regression, Random Forest, and Gradient Boosting, a cross-validation strategy was introduced. To conduct this strategy a function called ```evaluate``` was created. This function cross-validates the models with 5 different versions of the train dataset with set hyperparameters and test the models with the validation set. 
 
 
