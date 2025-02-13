@@ -40,6 +40,12 @@ From the above graph, the category 'High'(£1000 to £10,000) may have the highe
 
 This heatmap suggested that there were some PCA features that are positively and negatively correlated with ```Time``` and ```Amount```. V7 and V20 are positively and V2 and V5 are negatively correlated with ```Amount```. Also, V3 is negatively correlated with ```Time```.
 
-10.
+10. Also, many distribution graphs were generated for every PCA features with respect to the Fraudulent(Class=1) and Normal(Class=0) to understand how the features were spread around 0:
+
+![image](https://github.com/user-attachments/assets/da6e687b-bf70-4839-a47c-e47566d94484)
+
+The distributions showed that almost all the features are distributed around 0. But some of them went away from zero, especially the distribution of the Class 1(Fraud) such as V1, V3, V4, V7, V9, V10, V11, V14 and so on. There were also features that have almost similar distribution for both the classes, V13, V15, V22, V25, and V26.
+
+11. 
 
 
