@@ -23,11 +23,15 @@ In contrast, normal transactions have a lower average time gap of 0.61 seconds, 
 
 Fraudulent transactions display a clear tendency to occur in bursts or clusters, as shown by significant spikes in average time differences during certain hours (e.g., around hours 5 and 28). These bursts suggest that fraudulent transactions are often concentrated within short intervals, possibly indicative of coordinated attacks or automated processes.
 
-6. More features are created to imporve model performance. They are ```Is_Fraud_Consecutive```, ```is_burst_period```, ```is_peak_hour```, ```mean_time_diff_by_hour```, ```std_time_diff_by_hour```, ```distance_to_peak```, ```time_cluster```, ```fraud_count_last_10```, ```time_diff_normalized```. They serve different purposes for our analysis and provide weight to more accurate results.
+6. More features are created to improve model performance. They are ```Is_Fraud_Consecutive```, ```is_burst_period```, ```is_peak_hour```, ```mean_time_diff_by_hour```, ```std_time_diff_by_hour```, ```distance_to_peak```, ```time_cluster```, ```fraud_count_last_10```, ```time_diff_normalized```. They serve different purposes for our analysis and provide weight to more accurate results.
 7. The ```Amount``` feature showed a right-skewed distribution for the fraudulent class i.e. Class = 1.
 
 ![image](https://github.com/user-attachments/assets/182f5ced-e1cd-4947-b1de-ba45d5b010b1)
 
+8. To understand how ```Time_Diff``` can influence the ```Amount``` feature and thus the target feature ```Class```, a strategy called 'binning' is applied onto ```Amount```. The created bins indicate whether the fraudulent transactions cluster around specific amount ranges.
 
+![image](https://github.com/user-attachments/assets/1cfd4d39-982a-4e54-ae4f-7dd6cdd7adc6)
+
+From the above graph, the category 'High'(£1000 to £10,000) may have the highest possibility between the fraudulent amount ranges i.e. most likely the fraudulent amounts will be in this range. Also, a Hypothesis Testing was conducted to find out whether fraud is more likely in specific ```Amount``` ranges.
 
 
