@@ -32,6 +32,8 @@ Fraudulent transactions display a clear tendency to occur in bursts or clusters,
 
 ![image](https://github.com/user-attachments/assets/1cfd4d39-982a-4e54-ae4f-7dd6cdd7adc6)
 
-From the above graph, the category 'High'(£1000 to £10,000) may have the highest possibility between the fraudulent amount ranges i.e. most likely the fraudulent amounts will be in this range. Also, a Hypothesis Testing was conducted to find out whether fraud is more likely in specific ```Amount``` ranges.
+From the above graph, the category 'High'(£1000 to £10,000) may have the highest possibility between the fraudulent amount ranges i.e. most likely the fraudulent amounts will be in this range. Also, a Hypothesis Test i.e. Chi-squared test was conducted to find out whether fraud is more likely in specific ```Amount``` ranges. The p-value was 2.937336960675823e-17 which was way below 0.05. This indicated a strong evidence for the hypothesis in this Chi-Square test of independence.
+
+9. 
 
 
