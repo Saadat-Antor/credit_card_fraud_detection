@@ -10,7 +10,7 @@ To accomplish our goal we have taken a dataset from Kaggle. This dataset present
 
 ## 2. EDA & Feature Engineering:
 1. Have used describe() and info() funcions of pandas to understand the dataset. Have found out that there was no missing values and all the data types were accurate and made sense.
-2. There were 1825 rows that are zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unusual in credit card transactions.
+2. There were 1825 rows that were zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unusual in credit card transactions.
 3. The ```Time``` feature is quite important and its' distribution among two classes i.e. Class=0(normal) and Class=1(Fraud) shows that fraudulent transactions are more evenly distributed than the normal ones. The normal ones actually shows a cyclic distribution which indicates both 'peak' and 'off-peak' times.
 
 ![image](https://github.com/user-attachments/assets/fcf01da7-ca74-48fd-98c1-77aca37d156f)
@@ -32,8 +32,14 @@ Fraudulent transactions display a clear tendency to occur in bursts or clusters,
 
 ![image](https://github.com/user-attachments/assets/1cfd4d39-982a-4e54-ae4f-7dd6cdd7adc6)
 
-From the above graph, the category 'High'(£1000 to £10,000) may have the highest possibility between the fraudulent amount ranges i.e. most likely the fraudulent amounts will be in this range. Also, a Hypothesis Test i.e. Chi-squared test was conducted to find out whether fraud is more likely in specific ```Amount``` ranges. The p-value was 2.937336960675823e-17 which was way below 0.05. This indicated a strong evidence for the hypothesis in this Chi-Square test of independence.
+From the above graph, the category 'High'(£1000 to £10,000) may have the highest possibility between the fraudulent amount ranges i.e. most likely the fraudulent amounts will be in this range. Also, a Hypothesis Test i.e. Chi-squared test was conducted to find out whether fraud is more likely in specific ```Amount``` ranges. The p-value was 2.937336960675823e-17 which was way below 0.05. This indicated strong evidence for the hypothesis in this Chi-Square test of independence.
 
-9. 
+9. After all of that, a heatmap was generated to find the correlation between all the PCA features:
+
+![image](https://github.com/user-attachments/assets/fbe32b1e-9062-494d-a4d7-da773923366e)
+
+This heatmap suggested that there were some PCA features that are positively and negatively correlated with ```Time``` and ```Amount```. V7 and V20 are positively and V2 and V5 are negatively correlated with ```Amount```. Also, V3 is negatively correlated with ```Time```.
+
+10.
 
 
