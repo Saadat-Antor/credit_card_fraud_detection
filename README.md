@@ -51,10 +51,14 @@ The distributions showed that almost all the features are distributed around 0. 
 
 12. To keep track of the improvement of the models, they were evaluated twice, once before including the engineered features and once after.
 
-13. To select the best mode from the three models i.e. Logistic Regression, Random Forest, and Gradient Boosting, a cross-validation strategy was introduced. To conduct this strategy a function called ```evaluate``` was created. This function cross-validates the models with 5 different versions of the train dataset with set hyperparameters and test the models with the validation set before determining the best model among the mentioned three. The below screenshot provides the scores of each of the models for cross-validation sets and the validation set.
+13. To select the best mode(before introducing the engineered features) from the three models i.e. Logistic Regression, Random Forest, and Gradient Boosting, a cross-validation strategy was introduced. To conduct this strategy a function called ```evaluate``` was created. This function cross-validates the models with 5 different versions of the train dataset with set hyperparameters and test the models with the validation set before determining the best model among the mentioned three. The below screenshot provides the scores of each of the models for cross-validation sets and the validation set.
 
 ![image](https://github.com/user-attachments/assets/ea189b8e-7b99-4706-8f42-5d057aeafe2a)
 
 After determining the best model, the AUC-ROC score was determined, 0.9731.
 
-14. 
+14. After introducing the engineered features, the same process was followed and the AUC-ROC score was 0.9999.
+
+![image](https://github.com/user-attachments/assets/25f09f04-2ca9-49f0-a37b-7750b0658568)
+
+
