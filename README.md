@@ -49,6 +49,8 @@ The distributions showed that almost all the features are distributed around 0. 
 ## 3. Model Selection
 11. As mentioned before the dataset was highly imbalanced, so an oversampling technique called SMOTE was used to balance the dataset. It was done after the split of the main dataset into train, test, and evaluation sets.
 
-12. To select the best mode from the three models i.e. Logistic Regression, Random Forest, and Gradient Boosting, a cross-validation strategy was introduced. To conduct this strategy a function called ```evaluate``` was created. This function cross-validates the models with 5 different versions of the train dataset with set hyperparameters and test the models with the validation set. 
+12. To select the best mode from the three models i.e. Logistic Regression, Random Forest, and Gradient Boosting, a cross-validation strategy was introduced. To conduct this strategy a function called ```evaluate``` was created. This function cross-validates the models with 5 different versions of the train dataset with set hyperparameters and test the models with the validation set before determining the best model among the mentioned three. The below screenshot provides the scores of each of the models for cross-validation and test with validation set.
 
+![image](https://github.com/user-attachments/assets/ea189b8e-7b99-4706-8f42-5d057aeafe2a)
 
+13. 
