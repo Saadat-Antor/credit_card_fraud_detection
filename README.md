@@ -19,6 +19,7 @@ For this project, we utilized a publicly available dataset from Kaggle. The data
 
 4. An important feature was made called ```Time_Diff``` which represents the time gap (in seconds) between consecutive transactions. For fraudulent transactions, the average time gap is approximately 1.07 seconds, with a maximum gap of 16 seconds. Most fraudulent transactions (75%) occur with a time gap of 1 second or less, and half of them have no gap at all.
 In contrast, normal transactions have a lower average time gap of 0.61 seconds, but the maximum gap extends to 32 seconds. Similarly, 75% of normal transactions also occur within a gap of 1 second or less, and 50% have no time gap.
+
 5. To conduct a time of day analysis another feature ```Hour``` was created and the ```Time_Diff``` was plotted against it.
 
 ![image](https://github.com/user-attachments/assets/7c84c5d0-ef4c-4b58-a811-f2af43851521)
