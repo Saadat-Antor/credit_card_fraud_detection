@@ -6,12 +6,14 @@
 3. Model Selection
 
 ## 1. Gathering Data:
-To accomplish our goal we have taken a dataset from Kaggle. This dataset presents transactions that occurred in two days by credit cards in September 2013 by European cardholders, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.132% of all transactions.
+For this project, we utilized a publicly available dataset from Kaggle. The dataset contains credit card transactions made by European cardholders over two days in September 2013. Out of 284,807 transactions, 492 were identified as fraudulent, making up only 0.132% of the total. Due to this significant class imbalance, specialized techniques were necessary to ensure accurate fraud detection.
 
 ## 2. EDA & Feature Engineering:
-1. Have used describe() and info() funcions of pandas to understand the dataset. Have found out that there was no missing values and all the data types were accurate and made sense.
-2. There were 1825 rows that were zero-dollar transactions and 27 out of them were flagged as fraud. But it is not unusual in credit card transactions.
-3. The ```Time``` feature is quite important and its' distribution among two classes i.e. Class=0(normal) and Class=1(Fraud) shows that fraudulent transactions are more evenly distributed than the normal ones. The normal ones actually shows a cyclic distribution which indicates both 'peak' and 'off-peak' times.
+1. Used describe() and info() functions from Pandas to analyze the dataset structure. There were no missing values, and all data types were consistent and appropriate.
+
+2. Identified 1,825 transactions with a zero-dollar amount, of which 27 were flagged as fraud. However, zero-dollar transactions are not uncommon in credit card usage.
+
+3. The ```Time``` feature revealed distinct distribution patterns: fraudulent transactions were more evenly distributed, while normal transactions exhibited cyclic trends, indicating peak and off-peak times.
 
 ![image](https://github.com/user-attachments/assets/fcf01da7-ca74-48fd-98c1-77aca37d156f)
 
