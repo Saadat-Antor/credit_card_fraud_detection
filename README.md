@@ -64,6 +64,6 @@ After determining the best model, the AUC-ROC score was determined, 0.9731.
 
 ![image](https://github.com/user-attachments/assets/25f09f04-2ca9-49f0-a37b-7750b0658568)
 
-It is crucial to note that before introducing the engineered features the best model determined was RandomForrest but after introducing the features the best mode determined was GradientBoost. Also, the AUC-ROC score was also improved.
+It is crucial to note that before introducing the engineered features the best model determined was RandomForrest but after introducing the features the best mode determined was GradientBoost. Also, the AUC-ROC score was improved.
 
-
+**In conclusion**, improving model performance and effectively identifying fraudulent transactions relied heavily on feature engineering and addressing class imbalance. Additionally, implementing standard preprocessing steps—such as train-test-validation splitting, correcting data types, and handling missing or duplicate data—significantly enhanced model accuracy. Beyond reinforcing machine learning principles, this project also demonstrated a key practical aspect of data science: model performance can fluctuate, and the optimal model selection may change depending on different training scenarios.
